@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search-input {
+            width: 300px;
+            height: 40px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 0 10px;
+            font-size: 16px;
+        }
+        .search-button {
+            margin-top: 20px; /* Increased margin to separate the button from the input fields */
+        }
+        .back-link {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="input-row">
+            <input type="text" name="q" class="search-input" placeholder="All words">
+        </div>
+        <div class="input-row">
+            <input type="text" name="field1" class="search-input" placeholder="Keywords">
+        </div>
+        <div class="input-row">
+            <input type="text" name="field2" class="search-input" placeholder="Contains words">
+        </div>
+        <div class="input-row">
+            <input type="text" name="field3" class="search-input" placeholder="Words not included">
+        </div>
+        <form action="https://google.com/search">
+            <input type="submit" value="Advanced Search" class="search-button"> <!-- Moved the button to the bottom of the container -->
+        </form>
+        <a href="index.html" class="back-link">Back to Main Search</a>
+    </div>
+</body>
+</html>
